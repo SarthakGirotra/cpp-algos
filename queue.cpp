@@ -43,8 +43,9 @@ void dequeue()
     delete new_node;
 }
 
-void print(Node *node)
+void print()
 {
+    Node *node = head;
     if (node == NULL)
     {
         cout << "Queue is empty\n";
@@ -73,13 +74,7 @@ int main()
         cin >> temp;
         enqueue(temp);
     }
-    print(head);
-    dequeue();
-    print(head);
-    dequeue();
-    print(head);
-    dequeue();
-    print(head);
-    dequeue();
+    print();
+
     return 0;
 }
