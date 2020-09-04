@@ -24,10 +24,6 @@ void enter(int n)
         return;
     }
     new_node->next = NULL;
-    last = head;
-    while (last->next != NULL)
-        last = last->next;
-
     last->next = new_node;
     new_node->prev = last;
     last = new_node;
