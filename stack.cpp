@@ -28,16 +28,18 @@ int push(int n)
 
     return n;
 }
-int isEmpty(Node *node)
+int isEmpty()
 {
+    Node *node = head;
     if (node == NULL)
         return 1;
     else
         return 0;
 }
-int pop(Node *node)
+int pop()
 {
-    if (isEmpty(node))
+    Node *node = head;
+    if (isEmpty())
     {
         cout << "Stack empty\n";
         return 0;
@@ -50,15 +52,17 @@ int pop(Node *node)
     }
     return 1;
 }
-void peek(Node *node)
+void peek()
 
 {
+    Node *node = head;
     cout << node->data << endl;
     return;
 }
 
-void print(Node *node)
+void print()
 {
+    Node *node = head;
     if (node == NULL)
         cout << "Stack empty";
     while (node != NULL)
@@ -84,16 +88,8 @@ int main()
         cin >> temp;
         push(temp);
     }
-    print(head);
+    print();
 
-    // cout << isEmpty(head);
-    pop(head);
-    print(head);
-    pop(head);
-    print(head);
-    pop(head);
-    pop(head);
-    print(head);
-
+    
     return 0;
 }
