@@ -20,7 +20,7 @@ void enter(int x)
     {
 
         head = new_node;
-
+        last = head;
         return;
     }
     new_node->next = NULL;
