@@ -13,7 +13,7 @@ Node *last = NULL;
 void enter(int x)
 {
     Node *new_node = new Node();
-
+    //test comment on branch
     new_node->data = x;
 
     if (head == NULL)
